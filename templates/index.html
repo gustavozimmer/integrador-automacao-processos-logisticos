@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Estoque / E-commerce</title>
+</head>
+<body>
+
+    <h1>Produtos Disponíveis</h1>
+
+    <ul>
+        {% for produto in estoque %}
+            <li>
+                <strong>Produto:</strong> {{ produto.Produto }} <br>
+                <strong>Estoque:</strong> {{ produto.Qtde_Disponivel }} unidades
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
